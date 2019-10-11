@@ -2,7 +2,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>dat.sem3</groupId>
+    <groupId>dat.sem3.oas</groupId>
     <artifactId>WhiskyBackend</artifactId>
     <version>1.0.1</version>
     <packaging>war</packaging>
@@ -19,6 +19,19 @@
     </properties>
     
     <dependencies>
+        
+        <dependency>
+            <groupId>io.swagger.core.v3</groupId>
+            <artifactId>swagger-jaxrs2</artifactId>
+            <version>2.0.9</version>
+        </dependency>
+        
+        <dependency>
+            <groupId>io.swagger.core.v3</groupId>
+            <artifactId>swagger-jaxrs2-servlet-initializer</artifactId>
+            <version>2.0.9</version>
+        </dependency>
+        
         <dependency>
             <groupId>org.eclipse.persistence</groupId>
             <artifactId>org.eclipse.persistence.core</artifactId>
@@ -125,8 +138,8 @@
     <build>
        
         <plugins>
-             <!-- Plugin used to deploy to remote server -->
-             <plugin>
+            <!-- Plugin used to deploy to remote server -->
+            <plugin>
                 <groupId>org.apache.tomcat.maven</groupId>
                 <artifactId>tomcat7-maven-plugin</artifactId>
                 <version>2.2</version>
@@ -205,5 +218,5 @@
             </plugin>
         </plugins>
     </build>
-
+    <description>Start code for JPA, JAX-RS projects with support for OpenAPI documentation</description>
 </project>
