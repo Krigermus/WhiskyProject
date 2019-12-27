@@ -1,5 +1,6 @@
 package errorhandling;
 
+import errorhandling.dto.ExceptionDTO;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import java.util.logging.Level;
@@ -41,6 +42,14 @@ public class GenericExceptionMapper implements ExceptionMapper<Throwable> {
             return ((WebApplicationException) ex).getResponse().getStatusInfo();
         }
         return Response.Status.INTERNAL_SERVER_ERROR;
-
+    }
+    //Small hack, to provide json-error response in the filter
+    public static Response makeErrRes(String msg,int status){
+        ExceptionDTO error = new ExceptionDTO(status, msg);
+        String errJson =gson.toJson(error); 
+        return Response.status(error.getCode())
+                .entity(errJson)
+                .type(MediaType.APPLICATION_JSON)
+                .build();
     }
 }
