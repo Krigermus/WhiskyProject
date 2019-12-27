@@ -1,6 +1,11 @@
 /Users/Joe/Desktop/WhiskyProject/WhiskyBackend/src/main/java/rest/ApplicationConfig.java
-/Users/Joe/Desktop/WhiskyProject/WhiskyBackend/src/main/java/rest/RenameMeResource.java
+/Users/Joe/Desktop/WhiskyProject/WhiskyBackend/src/main/java/errorhandling/NotFoundException.java
+/Users/Joe/Desktop/WhiskyProject/WhiskyBackend/src/main/java/errorhandling/dto/ExceptionDTO.java
+/Users/Joe/Desktop/WhiskyProject/WhiskyBackend/src/main/java/errorhandling/AuthenticationException.java
+/Users/Joe/Desktop/WhiskyProject/WhiskyBackend/src/main/java/rest/WhiskyResource.java
+/Users/Joe/Desktop/WhiskyProject/WhiskyBackend/src/main/java/errorhandling/GenericExceptionMapper.java
 /Users/Joe/Desktop/WhiskyProject/WhiskyBackend/src/main/java/utils/EMF_Creator.java
-/Users/Joe/Desktop/WhiskyProject/WhiskyBackend/src/main/java/facades/FacadeExample.java
-/Users/Joe/Desktop/WhiskyProject/WhiskyBackend/src/main/java/entities/RenameMe.java
+/Users/Joe/Desktop/WhiskyProject/WhiskyBackend/src/main/java/entities/dto/WhiskyDTO.java
+/Users/Joe/Desktop/WhiskyProject/WhiskyBackend/src/main/java/entities/Whisky.java
+/Users/Joe/Desktop/WhiskyProject/WhiskyBackend/src/main/java/facades/WhiskyFacade.java
 /Users/Joe/Desktop/WhiskyProject/WhiskyBackend/src/main/java/utils/Settings.java
